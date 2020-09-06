@@ -1,0 +1,28 @@
+ion-content {
+    --background: #71e2ef;
+}
+
+ion-card {
+    margin: 8%;
+    border-radius: 15px;
+}
+
+ion-card ion-icon {
+    color: red;
+}
+
+ion-card img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.avatar {
+    border: 1px solid white;
+    margin: 3px;
+}
+
+ion-chip {
+    --background: black;
+    --color: white;
+}

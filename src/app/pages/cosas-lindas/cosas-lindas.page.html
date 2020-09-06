@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-toolbar color="secondary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+        <ion-title slot="start">
+            Cosas Lindas
+        </ion-title>
+        <ion-avatar slot="end" class="avatar">
+            <img src="../../assets/prueba00.png">
+        </ion-avatar>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card *ngFor="let imagen of imagenes; index as i">
+        <img [src]="imagen.image" />
+        <ion-card-header>
+            <ion-card-subtitle>{{imagen.usermail}}</ion-card-subtitle>
+            <ion-card-subtitle>{{imagen.fecha}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-card-title>
+                <ion-chip>
+                    <ion-icon *ngIf="imagen.megusta" size="large" name="heart" (click)="votarFoto(imagen)"></ion-icon>
+                    <ion-icon *ngIf="!imagen.megusta" size="large" name="heart-outline" (click)="votarFoto(imagen)"></ion-icon>
+                    <ion-label>{{imagen.votos.length}}</ion-label>
+                </ion-chip>
+
+
+            </ion-card-title>
+        </ion-card-content>
+    </ion-card>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="add-outline"></ion-icon>
+        </ion-fab-button>
+
+        <ion-fab-list side="top">
+            <ion-fab-button>
+                <ion-icon name="camera-outline" (click)="tomarFoto()"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-button>
+                <ion-icon name="images-outline" (click)="elegirFoto()"></ion-icon>
+            </ion-fab-button>
+        </ion-fab-list>
+    </ion-fab>
+</ion-content>

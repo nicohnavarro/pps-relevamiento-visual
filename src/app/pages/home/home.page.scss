@@ -1,0 +1,45 @@
+ion-content {
+    --background: #71e2ef;
+}
+
+ion-button {
+    // --background: url(../../../assets/cosasfeas2.jpg)!important;
+    --background: transparent;
+    --border-radius: 24px;
+}
+
+.boton {
+    height: 40%;
+    margin: 2rem;
+    border-radius: 24px;
+}
+
+.avatar {
+    border: 1px solid white;
+    margin: 3px;
+}
+
+.boton :hover {
+    border: 2px solid black;
+}
+
+.lindo {
+    background-image: url(../../../assets/cosaslindas.jpg)!important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.feo {
+    background-image: url(../../../assets/cosasfeas2.jpg)!important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+span {
+    background-color: black;
+    border-radius: 14px;
+    padding: 4px;
+    font-size: 2.2rem;
+}

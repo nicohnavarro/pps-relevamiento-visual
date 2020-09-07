@@ -1,7 +1,7 @@
-# Chat Universitario
+# Relevamiento Visual
 Ejercitacion de Ionic Angular PPS
 
-##Nicolás Navarro 🚀 :bomb: 
+## Nicolás Navarro 🚀 :bomb: 
 
 
 ### Inicio :iphone:

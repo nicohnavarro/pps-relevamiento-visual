@@ -84,13 +84,6 @@ export class CosasFeasPage implements OnInit {
       })
   }
 
-  // uploadImage(){
-  //   let image= {} as IImage;
-  //   image.id='22';
-  //   image.key='Funciona';
-  //   this.imgService.addImage(image);
-
-  // }
 
   verificarVoto(imagen: IImage) {
     if (imagen.votos.includes(this.usuario.id))

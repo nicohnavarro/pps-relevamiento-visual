@@ -61,12 +61,13 @@ export class LoginPage implements OnInit {
 
           const alert = await this.alertControler.create({
           header:'Uops!!',
+          cssClass: 'alertCustom',
           message: 'Le erraste al correo o la clave',
           buttons: [
             {
               text: 'Cancelar',
               role: 'cancel',
-              cssClass: 'secondary'
+              cssClass: 'danger'
             }
 
           ]

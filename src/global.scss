@@ -31,3 +31,33 @@
 body {
     background-color: #71e2ef;
 }
+
+.alertCustom .alert-wrapper {
+  --background: linear-gradient(
+    85deg,
+    rgba(34, 38, 222, 1) 2%,
+    rgba(56, 187, 181, 1) 32%,
+    rgba(74, 121, 190, 1) 35%,
+    rgba(51, 199, 190, 1) 74%,
+    rgba(12, 55, 131, 1) 100%
+  );
+    color:black;
+    border-radius: 3rem;
+    border:0.12rem solid white;
+  }
+  .alertCustom .alert-message{
+    color:white;
+  }
+  .alertCustom {
+    background: rgba(128, 128, 128, 0.233);
+  }
+  .alert-button-inner.sc-ion-alert-md {
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    color: white;
+}
+.alert-button.sc-ion-alert-md {
+  background-color: #c20e0ed3;
+  border: 0.1rem solid white;
+  border-radius: 5rem;
+}

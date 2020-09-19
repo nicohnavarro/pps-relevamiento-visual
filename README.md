@@ -12,6 +12,7 @@ Ejercitacion de Ionic Angular PPS
 ### Login :soon:
 
 ![principal](https://github.com/nicohnavarro/pps-relevamiento-visual/blob/master/src/assets/readme/login.PNG)
+![principal](https://github.com/nicohnavarro/pps-relevamiento-visual/blob/master/src/assets/readme/login2.PNG)
 
 
 ### Home :house_with_garden:

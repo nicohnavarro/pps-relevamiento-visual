@@ -6,8 +6,8 @@
     </div>
 </div>
 
-<ion-header>
-    <ion-toolbar color="secondary">
+<ion-header class="ion-no-border">
+    <ion-toolbar color="light">
         <ion-title text-center slot="start">Iniciar sesión</ion-title>
         <ion-avatar slot="end" class="avatar">
             <img src="../../assets/prueba00.png">
@@ -17,6 +17,7 @@
 
 <ion-content padding scroll="false">
 
+    <div class="espacio"></div>
     <ion-item lines="none" class="campos">
         <ion-label autocomplete="on" position="floating">Correo electrónico</ion-label>
         <ion-input type="text" name="correo" [(ngModel)]="correo" (ionFocus)='listaCorreos()' required></ion-input>
@@ -44,7 +45,7 @@
         </div>
     </div>
     <div class="fin">
-        <ion-button class="boton" expand="block " color="secondary" *ngIf="!cargando" (click)="onLogin() ">Ingresar</ion-button>
+        <ion-button class="boton" expand="block " color="light" *ngIf="!cargando" (click)="onLogin() ">Ingresar</ion-button>
         <ion-button class="boton" expand="block" color="danger" *ngIf="cargando">
             <ion-spinner name="crescent"></ion-spinner>
             Cargando...</ion-button>

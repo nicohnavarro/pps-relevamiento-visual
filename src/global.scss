@@ -9,7 +9,6 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
-
 /* Core CSS required for Ionic components to work properly */
 
 @import "~@ionic/angular/css/core.css";
@@ -19,7 +18,7 @@
 @import "~@ionic/angular/css/normalize.css";
 @import "~@ionic/angular/css/structure.css";
 @import "~@ionic/angular/css/typography.css";
-@import '~@ionic/angular/css/display.css';
+@import "~@ionic/angular/css/display.css";
 
 /* Optional CSS utils that can be commented out */
 
@@ -29,35 +28,37 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 body {
-    background-color: #71e2ef;
+  background-color: #71e2ef;
+  font-family: "Montserrat", sans-serif;
 }
 
 .alertCustom .alert-wrapper {
+  --background: rgb(255, 255, 255);
   --background: linear-gradient(
-    85deg,
-    rgba(34, 38, 222, 1) 2%,
-    rgba(56, 187, 181, 1) 32%,
-    rgba(74, 121, 190, 1) 35%,
-    rgba(51, 199, 190, 1) 74%,
-    rgba(12, 55, 131, 1) 100%
+    180deg,
+    rgba(113, 226, 239, 1) 0%,
+    rgba(201, 244, 248, 1) 32%,
+    rgba(255, 255, 255, 1) 100%
   );
-    color:black;
-    border-radius: 3rem;
-    border:0.12rem solid white;
-  }
-  .alertCustom .alert-message{
-    color:white;
-  }
-  .alertCustom {
-    background: rgba(128, 128, 128, 0.233);
-  }
-  .alert-button-inner.sc-ion-alert-md {
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    color: white;
+  color: black;
+  border-radius: 10px;
+}
+.alertCustom .alert-message {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+.alertCustom {
+  background: rgba(128, 128, 128, 0.233);
+}
+.alert-button-inner.sc-ion-alert-md {
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 .alert-button.sc-ion-alert-md {
-  background-color: #c20e0ed3;
-  border: 0.1rem solid white;
-  border-radius: 5rem;
+  background-color: rgb(241, 28, 28);
+  font-family: "Montserrat", sans-serif;
+  border-radius: 25px;
+  box-shadow: 8px 11px 12px -7px #080808;
 }

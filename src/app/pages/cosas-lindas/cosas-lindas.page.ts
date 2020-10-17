@@ -113,6 +113,12 @@ export class CosasLindasPage implements OnInit {
 
   elegirFoto() {
     console.log('ok elegir');
+    this.imgService.choosePhoto().then(async imageData =>{
+      this.subirFoto(imageData);
+      this.presentToast('Foto Subida con exito!','success')
+    },err => {
+      alert(err);
+    })
   }
 
   private puedoVotar(imagen: IImage) {
